@@ -1,0 +1,34 @@
+{% extends 'base.html'%}
+{% block body %}
+{% block content%}
+  <div class="container">
+    <h1 class="text-center logo my-4">
+      <a href="{% url 'home' %}">Dial Gas</a>
+    </h1>
+    <div class="row justify-content-center">
+
+    
+      <div class="col-lg-6 col-md-8 col-sm-12">
+
+            <div class="card " style="position:sticky;top:80px">
+                <h3 class="card-header"> {{user.username}}</h3>
+                <div class="card-body">
+                    <p>Full Name: <span class="text-success">{{prof.full_name}}</span> </p>
+                  <p class="card-text"> Estate: <span class="text-success">{{prof.estate}}</span> </p>
+                    <p>House Number <span class="text-success">{{prof.house_number}}</span> </p>
+                      <p>Mobile Number <span class="text-success">{{prof.mobile_number}}</span> </p>
+                </div>
+                <div class="card-footer text-muted">
+                  <a href="#">Edit profile</a>
+                </div>
+              </div>
+            </div>
+            </div>
+
+
+            </div>
+          </div>
+    </div>
+  </div>
+  {% endblock%}
+{% endblock%}
